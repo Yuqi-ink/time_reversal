@@ -100,14 +100,14 @@ sentencepiece==0.1.99
 setuptools==68.0.0
 six==1.16.0
 soupsieve==2.5
-splatting==0.0.0
+# splatting==0.0.0
 stack-data==0.6.2
 sympy==1.12
 tokenizers==0.15.0
 tomli==2.0.1
 torch==2.0.1
-torchaudio==0.13.1
-torchvision==0.14.1
+# torchaudio==0.13.1
+# torchvision==0.14.1
 tqdm==4.66.1
 traitlets==5.9.0
 transformers==4.35.2

@@ -85,7 +85,7 @@ def main(data_type):
     os.makedirs(output_folder, exist_ok=True)
 
     # Model parameters
-    model_card = "stabilityai/stable-video-diffusion-img2vid-xt"
+    model_card = "/home/lyq/data/stable-video-diffusion-img2vid-xt"
     fps_value = 7
     motion_id = 127
     random_seed = 42
