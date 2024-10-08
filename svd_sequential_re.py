@@ -165,7 +165,7 @@ def main(data_type):
         # Save frames
         for i, frame in enumerate(frames):
             frame.save(os.path.join(frame_folder, f'{i}.png'))
-
+        
         # Export to video
         export_to_video(frames, video_file, fps=fps_value)
 
