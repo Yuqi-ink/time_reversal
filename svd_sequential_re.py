@@ -10,6 +10,7 @@ from unet_spatio_temporal_condition import UNetSpatioTemporalConditionModel
 from scheduling_euler_discrete_resampling import EulerDiscreteScheduler
 from datasets import get_dataset
 import tqdm
+from img2vid import images_to_video
 
 def img_preprocess(img_path, mode='crop', orig_aspect=None):
     image = load_image(img_path)
@@ -167,7 +168,8 @@ def main(data_type):
             frame.save(os.path.join(frame_folder, f'{i}.png'))
         
         # Export to video
-        export_to_video(frames, video_file, fps=fps_value)
+        # export_to_video(frames, video_file, fps=fps_value)
+        images_to_video(frame_folder, video_file, fps_value)
 
 if __name__ == '__main__':
     #different input flags for different datasets
